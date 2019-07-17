@@ -1,0 +1,17 @@
+<html>
+    <body>
+<form action="/add_todo">
+<label>
+To do item
+<input type="text" name="item">
+<button type="submit"> add</button>
+</label>
+</form>
+<ol>
+<!-- for loop logic of jinja template -->
+{%for item in items%}
+<li>{{item}}</li>
+{%endfor%}
+</ol>
+</body>
+</html>
